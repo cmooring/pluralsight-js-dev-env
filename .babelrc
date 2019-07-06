@@ -1,3 +1,5 @@
+// How does this differ to babel.config.js??
+// Checkout babel.config.js section of http://jscomplete.com/reactful
 {
   "presets": ["@babel/preset-env"]
 }

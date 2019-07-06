@@ -1,5 +1,12 @@
 import 'whatwg-fetch';
 import getBaseUrl from './baseUrl';
+import Promise from 'promise-polyfill';
+
+// Promise polyfill is discussed on whatwg-fetch npm docs
+// This example usage is from https://www.barrykooij.com/pollyfilling-fetch-promises
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 
 const baseUrl = getBaseUrl();
 

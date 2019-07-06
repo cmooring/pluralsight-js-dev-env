@@ -1,4 +1,5 @@
 import {getUsers, deleteUser} from './api/userApi';
+import './index.css'
 
 getUsers().then(result => {
   let usersBody = "";
@@ -35,3 +36,7 @@ import numeral from 'numeral';
 
 const courseValue = numeral(1000).format('$0,0.00');
 console.log(`I would pay ${courseValue} for this awesome course!`) // eslint-disable-line no-console
+
+// const arr = [1,2,3];
+// const iAmJavascriptES6 = () => console.log(...arr);
+// window.iAmJavascriptES6 = iAmJavascriptES6;
