@@ -1,4 +1,5 @@
 import {getUsers, deleteUser} from './api/userApi';
+import numeral from 'numeral';
 import './index.css'
 
 getUsers().then(result => {
@@ -31,8 +32,6 @@ getUsers().then(result => {
   });
 
 });
-
-import numeral from 'numeral';
 
 const courseValue = numeral(1000).format('$0,0.00');
 console.log(`I would pay ${courseValue} for this awesome course!`) // eslint-disable-line no-console
